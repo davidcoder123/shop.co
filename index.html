@@ -15,7 +15,13 @@
     <div
       class="shadow-2xl fixed right-10 bottom-10 z-10 text-5xl bg-white rounded-full"
     >
-      <a href="#"><i class="bi bi-arrow-up-circle-fill"></i></a>
+      <div class="relative group">
+        <a href="#"><i class="bi bi-arrow-up-circle-fill"></i></a>
+        <span
+          class="absolute bg-gray-200 rounded-2xl text-sm whitespace-nowrap top-0 left-1/2 p-2 transform -translate-y-13 opacity-0 group-hover:opacity-100 transition-opacity duration-300 -translate-x-1/2 pointer-events-none"
+          >To Top</span
+        >
+      </div>
     </div>
     <!-- <<<<<<<<<<<<<<<<<<<hearder-start>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
     <header>
@@ -59,7 +65,7 @@
               class="bg-gray-200 p-2.5 pl-10 rounded-4xl placeholder-gray-400 placeholder:text-sm w-full focus:outline-gray-300"
             />
           </form>
-          <div class="space-x-3 text-xl flex">
+          <div class="space-x-3 text-xl flex animate-bounce">
             <i class="bi bi-search lg:hidden"></i>
             <i class="bi bi-cart-fill"></i>
             <i class="bi bi-person-circle"></i>
